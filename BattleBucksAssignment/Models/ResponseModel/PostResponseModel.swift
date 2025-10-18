@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct PostResponseModel: Decodable {
+    let id: Int?
+    let userId: Int?
+    let title: String?
+    let body: String?
+}
