@@ -20,7 +20,7 @@ iOS 26.0
 Quick Setup
 
 Get the Code
-git clone https://github.com/your-username/posts-app-swiftui.git
+git clone https://github.com/zafarbinrahmat-dotcom/BattleBucksAssignment.git
 
 How the Code is Organized
 I've structured the code to be easy to understand and maintain:
