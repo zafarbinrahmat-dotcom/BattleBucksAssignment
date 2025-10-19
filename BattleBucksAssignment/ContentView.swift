@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = PostViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world! azafar")
+        TabView {
+            PostListView(viewModel: viewModel)
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Posts")
+                }
+            
+            FavouritePostsView(viewModel: viewModel)
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("Favorites")
+                }
         }
-        .padding()
-        .onAppear {
-        }
+        .accentColor(.blue)
     }
 }
 
