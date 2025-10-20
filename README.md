@@ -37,8 +37,6 @@ PostDetailView.swift: Full post view
 PostCardView.swift: Reusable post card (used in PostListView and FavouritePostsView)
 PostViewModel.swift: Brain of the app - manages data and state
 
-How It Works Under the Hood
-
 The Tech Stuff
 SwiftUI: For all the user interface
 MVVM Pattern: Keeps code organized
